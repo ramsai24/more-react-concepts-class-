@@ -16,6 +16,13 @@ class Greetings extends Component {
     return (
       <div className="greetings-container">
         <div className="responsive-container">
+          {/* UNControlled Input which is handel by BROWSER it mean what to be displayed in the input is desides by the browser */}
+          <input
+            type="text"
+            className="input-filed"
+            onChange={this.onChangeUserInput}
+          />
+          {/* Controlled Input which is handel by REACT STATE */}
           <input
             type="text"
             className="input-filed"

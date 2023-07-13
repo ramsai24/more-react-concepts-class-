@@ -6,7 +6,15 @@ class Counter extends Component {
   state = {count: 0}
 
   onIncrement = () => {
+    // Batch Update concept (setState syntax with call back syntax format)
     this.setState(prevState => ({count: prevState.count + 1}))
+    // this.setState(prevState => ({count: prevState.count + 1}))
+    // this.setState(prevState => ({count: prevState.count + 1}))
+
+    // Batch Update concept (setState syntax with object syntax format)
+    // this.setState({count: this.state.count + 1})
+    // this.setState({count: this.state.count + 1})
+    // this.setState({count: this.state.count + 1})
   }
 
   onDecrement = () => {
